@@ -91,7 +91,27 @@ li a:hover{
     gap: 32px;
     display: flex;
     flex-direction: row;
+    overflow:hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em none orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 10px 0px;
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret  .75s step-end infinite; /* The typing effect and caret blinking */
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
 .leftContent .smallText{
     max-width: 70% ;
@@ -133,4 +153,11 @@ li a:hover{
 
 
 
+.secondHeader p{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    font-weight: bolder;
+    text-align: center;
+}
 
