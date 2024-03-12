@@ -33,7 +33,7 @@ box-shadow: 0px 0px  20px rgba(243, 133, 114, 0.4);
 transition: .7s ease-in-out;
 }
 
-h3{
+.header h3{
     font-size: 24px;
     margin-right: auto;
     color: #F9FAF8;
@@ -226,5 +226,86 @@ li a:hover{
 }
 
 .quote .quoteInsp{
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+
+}
+
+.action
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    gap: 40px;
     
+}
+
+.box
+{
+    background-color: #3882F6;
+    width: 80%;
+    height: 30vh;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px -5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 30px 100px;
+margin: 0px;
+/* font-size: 20px; */
+line-height: 1.5;
+}
+
+.action_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.action_text h3{
+    color: #f9f8f8;
+    margin: 0%;
+    padding-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+.action_text p{
+    margin: 0%;
+    padding: 0%;
+    color: #f9f8f8;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.action button{
+background-color: #3882F6;
+color: #F9FAF8;
+border: 2px solid #f9f8f8;
+font-weight: bold;
+width: 9em;
+cursor: pointer;
+padding: 10px;
+float: right;
+box-sizing: border-box;
+border-radius: .5rem;
+transition: all .1s ease;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 300;
+}
+
+.footer{
+    background-color: #1F2937;
+    color: #f9f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
 }
